@@ -19,7 +19,7 @@ let server: HttpServer = {
     // We use a different port so unit tests will still work
     try? server.start(8081)
 
-    server.POST["/api/v1/user"] = { _ in HttpResponse.ok(.text(TestJsonData.goodPosts)) }
+    
     server.POST["/api/v1/post"] = { _ in HttpResponse.ok(.text(TestJsonData.postUploaded))}
     server.POST["/api/v1/image"] = {_ in HttpResponse.ok(.text(""))}
     return server

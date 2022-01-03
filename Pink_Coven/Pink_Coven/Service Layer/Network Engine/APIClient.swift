@@ -7,8 +7,10 @@
 
 import Foundation
 import Combine
+import KituraContracts
 
 enum APIError: Error {
+    case URLProcessingFailed
     case requestFailed(Int)
     case postProcessingFailed(Error?)
 }
@@ -23,8 +25,22 @@ struct APIClient {
     }
     
     func publisherForRequest<T: APIRequest>(_ request: T) -> AnyPublisher<T.Response, Error> {
-        let url = environment.baseURL.appendingPathComponent(request.path)
-        var urlRequest = URLRequest(url: url)
+        var url = environment.baseURL.appendingPathComponent(request.path)
+        var urlRequest : URLRequest
+        if let params = request.params {
+            let failureResult: Fail<T.Response, Error> = Fail(error: APIError.URLProcessingFailed)
+            guard let queryItems: [URLQueryItem] = try? QueryEncoder().encode(params),
+                  var components = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
+                      return failureResult.eraseToAnyPublisher()
+                  }
+            
+            components.queryItems = queryItems
+            guard let newUrl = components.url else {
+                return failureResult.eraseToAnyPublisher()
+            }
+            url = newUrl
+        }
+        urlRequest = URLRequest(url: url)
         urlRequest.addValue(request.contentType, forHTTPHeaderField: "Content-Type")
         urlRequest.httpMethod = request.method.rawValue
         urlRequest.httpBody = request.body

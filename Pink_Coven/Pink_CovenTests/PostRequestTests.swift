@@ -13,7 +13,7 @@ class PostRequestTests: XCTestCase {
     func testHandleWithGoodData() throws {
         let data = JsonData.goodPosts.data(using: .utf8)!
         
-        let request = PostRequest()
+        let request = GetAllPostRequest()
         do {
             let result = try request.handle(response: data)
             XCTAssertEqual(result.count, 3)
@@ -27,7 +27,7 @@ class PostRequestTests: XCTestCase {
     func testHandleWithBadData() throws {
         let data = JsonData.badPosts.data(using: .utf8)!
         
-        let request = PostRequest()
+        let request = GetAllPostRequest()
         XCTAssertThrowsError(try request.handle(response: data)) {
             error in
             XCTAssertTrue(error is DecodingError)

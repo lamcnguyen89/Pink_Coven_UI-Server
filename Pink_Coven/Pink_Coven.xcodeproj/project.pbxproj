@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE4B1F50278369CD00D34BCE /* TestJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1F4F278369CD00D34BCE /* TestJsonData.swift */; };
+		CE4B1F5527837F6700D34BCE /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = CE4B1F5427837F6700D34BCE /* KituraContracts */; };
 		EA673EFA2781271F007820A3 /* Pink_CovenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673EF92781271F007820A3 /* Pink_CovenApp.swift */; };
 		EA673EFC2781271F007820A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673EFB2781271F007820A3 /* MainView.swift */; };
 		EA673EFE27812722007820A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA673EFD27812722007820A3 /* Assets.xcassets */; };
@@ -103,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4B1F5527837F6700D34BCE /* KituraContracts in Frameworks */,
 				EA673F2627812789007820A3 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +307,7 @@
 			name = Pink_Coven;
 			packageProductDependencies = (
 				EA673F2527812789007820A3 /* Swifter */,
+				CE4B1F5427837F6700D34BCE /* KituraContracts */,
 			);
 			productName = Pink_Coven;
 			productReference = EA673EF62781271F007820A3 /* Pink_Coven.app */;
@@ -379,6 +382,7 @@
 			mainGroup = EA673EED2781271F007820A3;
 			packageReferences = (
 				EA673F2427812789007820A3 /* XCRemoteSwiftPackageReference "swifter" */,
+				CE4B1F5327837F6700D34BCE /* XCRemoteSwiftPackageReference "KituraContracts" */,
 			);
 			productRefGroup = EA673EF72781271F007820A3 /* Products */;
 			projectDirPath = "";
@@ -764,6 +768,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE4B1F5327837F6700D34BCE /* XCRemoteSwiftPackageReference "KituraContracts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/KituraContracts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		EA673F2427812789007820A3 /* XCRemoteSwiftPackageReference "swifter" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/httpswift/swifter.git";
@@ -775,6 +787,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE4B1F5427837F6700D34BCE /* KituraContracts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE4B1F5327837F6700D34BCE /* XCRemoteSwiftPackageReference "KituraContracts" */;
+			productName = KituraContracts;
+		};
 		EA673F2527812789007820A3 /* Swifter */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EA673F2427812789007820A3 /* XCRemoteSwiftPackageReference "swifter" */;

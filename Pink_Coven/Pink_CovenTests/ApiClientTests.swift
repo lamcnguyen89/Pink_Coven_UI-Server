@@ -39,7 +39,7 @@ class ApiClientTests: XCTestCase {
         func testPublisherForRequest() {
             server.GET["/api/v1/posts"] = { _ in HttpResponse.ok(.text(JsonData.goodPosts))}
             
-            let request = PostRequest()
+            let request = GetAllPostRequest()
             let client = APIClient(environment: .local)
             
             var networkResult: Subscribers.Completion<Error>?

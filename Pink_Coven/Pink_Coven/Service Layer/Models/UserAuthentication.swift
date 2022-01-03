@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import KituraContracts
 
 var currentUser: UserAuthentication?
+
 
 struct UserAuthentication: Codable {
     var id: String
@@ -15,3 +17,7 @@ struct UserAuthentication: Codable {
     var password: String?
 }
 
+struct UserParams: QueryParams {
+    var id: String
+    var password: String
+}
