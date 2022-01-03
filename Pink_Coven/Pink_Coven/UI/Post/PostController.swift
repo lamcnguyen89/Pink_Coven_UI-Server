@@ -17,7 +17,7 @@ final class PostController: ObservableObject {
 
   func uploadPost(withDescription description: String, image: UIImage) {
     isRunning = true
-      let client = APIClient(environment: .local81)
+      let client = APIClient()
     let request = CreateNewPostRequest(caption: description)
     client.publisherForRequest(request)
       .tryMap { post -> (UUID, Data) in
@@ -27,8 +27,9 @@ final class PostController: ObservableObject {
         return (imageId, imageData)
       }
       .flatMap { (imageId, imageData) -> AnyPublisher<Void, Error> in
+          let localClient = APIClient(environment: .local81)
         let imageRequest = UploadImageRequest(imageId: imageId, imageData: imageData)
-        return client.publisherForRequest(imageRequest)
+        return localClient.publisherForRequest(imageRequest)
       }
       .sink(receiveCompletion: { completion in
         self.isRunning = false

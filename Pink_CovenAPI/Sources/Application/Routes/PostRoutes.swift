@@ -26,6 +26,7 @@ let iso8601Encoder: () -> BodyEncoder = {
 
 func initializePostRoutes(app: App) {
     app.router.get("/api/v1/posts", handler: getPosts)
+    app.router.post("/api/v1/posts", handler: addPost)
 
     app.router.decoders[.json] = iso8601Decoder
     app.router.encoders[.json] = iso8601Encoder
@@ -36,3 +37,12 @@ func getPosts(completion: @escaping ([Post]?, RequestError?) -> Void) {
     completion(posts, nil)
 }
 
+func addPost(post: Post, completion: @escaping (Post?, RequestError?) -> Void) {
+    var newPost = post
+    if newPost.id == nil {
+        newPost.id == UUID()
+    }
+    
+    posts.append(newPost)
+    completion(newPost, nil)
+}
