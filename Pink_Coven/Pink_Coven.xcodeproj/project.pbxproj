@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA673EFA2781271F007820A3 /* Pink_CovenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673EF92781271F007820A3 /* Pink_CovenApp.swift */; };
+		EA673EFC2781271F007820A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673EFB2781271F007820A3 /* MainView.swift */; };
+		EA673EFE27812722007820A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA673EFD27812722007820A3 /* Assets.xcassets */; };
+		EA673F0127812722007820A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA673F0027812722007820A3 /* Preview Assets.xcassets */; };
+		EA673F1727812722007820A3 /* Pink_CovenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F1627812722007820A3 /* Pink_CovenUITests.swift */; };
+		EA673F2627812789007820A3 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = EA673F2527812789007820A3 /* Swifter */; };
+		EA673F2D27812AFA007820A3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F2C27812AFA007820A3 /* UserData.swift */; };
+		EA673F3327812B79007820A3 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F3227812B79007820A3 /* APIRequest.swift */; };
+		EA673F3527812B97007820A3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F3427812B97007820A3 /* APIClient.swift */; };
+		EA673F3727812BBC007820A3 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F3627812BBC007820A3 /* APIEnvironment.swift */; };
+		EA673F3927812BF4007820A3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F3827812BF4007820A3 /* Post.swift */; };
+		EA673F3B27812C39007820A3 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F3A27812C39007820A3 /* UserAuthentication.swift */; };
+		EA673F3D27812C4F007820A3 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F3C27812C4F007820A3 /* Feed.swift */; };
+		EA673F3F27812C9A007820A3 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F3E27812C9A007820A3 /* PostRequest.swift */; };
+		EA673F4127812CBC007820A3 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F4027812CBC007820A3 /* UserRequest.swift */; };
+		EA673F4327812DB5007820A3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F4227812DB5007820A3 /* FeedView.swift */; };
+		EA673F4527812DD3007820A3 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F4427812DD3007820A3 /* FeedCell.swift */; };
+		EA673F4727812DFA007820A3 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F4627812DFA007820A3 /* CommentCell.swift */; };
+		EA673F4927812E6A007820A3 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F4827812E6A007820A3 /* LoginSignupView.swift */; };
+		EA673F4B27812EA4007820A3 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F4A27812EA4007820A3 /* AppTitle.swift */; };
+		EA673F4F278130B0007820A3 /* PostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F4E278130B0007820A3 /* PostRequestTests.swift */; };
+		EA673F5127813387007820A3 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F5027813387007820A3 /* JsonData.swift */; };
+		EA673F55278133F8007820A3 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F54278133F8007820A3 /* ApiClientTests.swift */; };
+		EA673F5827813732007820A3 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F5727813732007820A3 /* TakePhotoViewController.swift */; };
+		EA673F5A27813750007820A3 /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA673F5927813750007820A3 /* TakePhotoStoryboard.storyboard */; };
+		EA673F5C27815D2B007820A3 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F5B27815D2B007820A3 /* CreatePostView.swift */; };
+		EA98E7FA27816DE20016D3AE /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA98E7F927816DE20016D3AE /* CameraPreviewView.swift */; };
+		EA98E7FC27816EAB0016D3AE /* PhotoCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA98E7FB27816EAB0016D3AE /* PhotoCaptureController.swift */; };
+		EA98E7FE278176560016D3AE /* AddDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA98E7FD278176560016D3AE /* AddDescriptionView.swift */; };
+		EA98E800278176B40016D3AE /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA98E7FF278176B40016D3AE /* PostController.swift */; };
+		EA98E802278177A00016D3AE /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA98E801278177A00016D3AE /* ImageRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA673F0827812722007820A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA673EEE2781271F007820A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA673EF52781271F007820A3;
+			remoteInfo = Pink_Coven;
+		};
+		EA673F1327812722007820A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA673EEE2781271F007820A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA673EF52781271F007820A3;
+			remoteInfo = Pink_Coven;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA673EF62781271F007820A3 /* Pink_Coven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pink_Coven.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA673EF92781271F007820A3 /* Pink_CovenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pink_CovenApp.swift; sourceTree = "<group>"; };
+		EA673EFB2781271F007820A3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EA673EFD27812722007820A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA673F0027812722007820A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA673F0227812722007820A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA673F0727812722007820A3 /* Pink_CovenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pink_CovenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA673F0D27812722007820A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA673F1227812722007820A3 /* Pink_CovenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pink_CovenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA673F1627812722007820A3 /* Pink_CovenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pink_CovenUITests.swift; sourceTree = "<group>"; };
+		EA673F1827812722007820A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA673F2C27812AFA007820A3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		EA673F3227812B79007820A3 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		EA673F3427812B97007820A3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EA673F3627812BBC007820A3 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		EA673F3827812BF4007820A3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EA673F3A27812C39007820A3 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		EA673F3C27812C4F007820A3 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		EA673F3E27812C9A007820A3 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		EA673F4027812CBC007820A3 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		EA673F4227812DB5007820A3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		EA673F4427812DD3007820A3 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		EA673F4627812DFA007820A3 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		EA673F4827812E6A007820A3 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
+		EA673F4A27812EA4007820A3 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
+		EA673F4E278130B0007820A3 /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
+		EA673F5027813387007820A3 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		EA673F54278133F8007820A3 /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
+		EA673F5727813732007820A3 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		EA673F5927813750007820A3 /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
+		EA673F5B27815D2B007820A3 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		EA98E7F927816DE20016D3AE /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		EA98E7FB27816EAB0016D3AE /* PhotoCaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureController.swift; sourceTree = "<group>"; };
+		EA98E7FD278176560016D3AE /* AddDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDescriptionView.swift; sourceTree = "<group>"; };
+		EA98E7FF278176B40016D3AE /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		EA98E801278177A00016D3AE /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA673EF32781271F007820A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA673F2627812789007820A3 /* Swifter in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA673F0427812722007820A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA673F0F27812722007820A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA673EED2781271F007820A3 = {
+			isa = PBXGroup;
+			children = (
+				EA673EF82781271F007820A3 /* Pink_Coven */,
+				EA673F0A27812722007820A3 /* Pink_CovenTests */,
+				EA673F1527812722007820A3 /* Pink_CovenUITests */,
+				EA673EF72781271F007820A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA673EF72781271F007820A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA673EF62781271F007820A3 /* Pink_Coven.app */,
+				EA673F0727812722007820A3 /* Pink_CovenTests.xctest */,
+				EA673F1227812722007820A3 /* Pink_CovenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA673EF82781271F007820A3 /* Pink_Coven */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F2827812A37007820A3 /* UI */,
+				EA673F2E27812B2A007820A3 /* Service Layer */,
+				EA673F27278128C7007820A3 /* Supporting Files */,
+			);
+			path = Pink_Coven;
+			sourceTree = "<group>";
+		};
+		EA673EFF27812722007820A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F0027812722007820A3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA673F0A27812722007820A3 /* Pink_CovenTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F0D27812722007820A3 /* Info.plist */,
+				EA673F4E278130B0007820A3 /* PostRequestTests.swift */,
+				EA673F5027813387007820A3 /* JsonData.swift */,
+				EA673F54278133F8007820A3 /* ApiClientTests.swift */,
+			);
+			path = Pink_CovenTests;
+			sourceTree = "<group>";
+		};
+		EA673F1527812722007820A3 /* Pink_CovenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F1627812722007820A3 /* Pink_CovenUITests.swift */,
+				EA673F1827812722007820A3 /* Info.plist */,
+			);
+			path = Pink_CovenUITests;
+			sourceTree = "<group>";
+		};
+		EA673F27278128C7007820A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA673EF92781271F007820A3 /* Pink_CovenApp.swift */,
+				EA673F0227812722007820A3 /* Info.plist */,
+				EA673EFD27812722007820A3 /* Assets.xcassets */,
+				EA673EFF27812722007820A3 /* Preview Content */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA673F2827812A37007820A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA673EFB2781271F007820A3 /* MainView.swift */,
+				EA673F2C27812AFA007820A3 /* UserData.swift */,
+				EA673F2927812A48007820A3 /* Feed */,
+				EA673F56278136E6007820A3 /* Post */,
+				EA673F2A27812A4F007820A3 /* Onboarding */,
+				EA673F2B27812A5D007820A3 /* Helpers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EA673F2927812A48007820A3 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F4227812DB5007820A3 /* FeedView.swift */,
+				EA673F4427812DD3007820A3 /* FeedCell.swift */,
+				EA673F4627812DFA007820A3 /* CommentCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		EA673F2A27812A4F007820A3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F4827812E6A007820A3 /* LoginSignupView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EA673F2B27812A5D007820A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F4A27812EA4007820A3 /* AppTitle.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EA673F2E27812B2A007820A3 /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F2F27812B3F007820A3 /* Network Engine */,
+				EA673F3027812B48007820A3 /* Models */,
+				EA673F3127812B53007820A3 /* Requests */,
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		EA673F2F27812B3F007820A3 /* Network Engine */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F3227812B79007820A3 /* APIRequest.swift */,
+				EA673F3427812B97007820A3 /* APIClient.swift */,
+				EA673F3627812BBC007820A3 /* APIEnvironment.swift */,
+			);
+			path = "Network Engine";
+			sourceTree = "<group>";
+		};
+		EA673F3027812B48007820A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F3827812BF4007820A3 /* Post.swift */,
+				EA673F3C27812C4F007820A3 /* Feed.swift */,
+				EA673F3A27812C39007820A3 /* UserAuthentication.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA673F3127812B53007820A3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F3E27812C9A007820A3 /* PostRequest.swift */,
+				EA673F4027812CBC007820A3 /* UserRequest.swift */,
+				EA98E801278177A00016D3AE /* ImageRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		EA673F56278136E6007820A3 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				EA673F5727813732007820A3 /* TakePhotoViewController.swift */,
+				EA673F5927813750007820A3 /* TakePhotoStoryboard.storyboard */,
+				EA673F5B27815D2B007820A3 /* CreatePostView.swift */,
+				EA98E7F927816DE20016D3AE /* CameraPreviewView.swift */,
+				EA98E7FB27816EAB0016D3AE /* PhotoCaptureController.swift */,
+				EA98E7FD278176560016D3AE /* AddDescriptionView.swift */,
+				EA98E7FF278176B40016D3AE /* PostController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA673EF52781271F007820A3 /* Pink_Coven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA673F1B27812722007820A3 /* Build configuration list for PBXNativeTarget "Pink_Coven" */;
+			buildPhases = (
+				EA673EF22781271F007820A3 /* Sources */,
+				EA673EF32781271F007820A3 /* Frameworks */,
+				EA673EF42781271F007820A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pink_Coven;
+			packageProductDependencies = (
+				EA673F2527812789007820A3 /* Swifter */,
+			);
+			productName = Pink_Coven;
+			productReference = EA673EF62781271F007820A3 /* Pink_Coven.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA673F0627812722007820A3 /* Pink_CovenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA673F1E27812722007820A3 /* Build configuration list for PBXNativeTarget "Pink_CovenTests" */;
+			buildPhases = (
+				EA673F0327812722007820A3 /* Sources */,
+				EA673F0427812722007820A3 /* Frameworks */,
+				EA673F0527812722007820A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA673F0927812722007820A3 /* PBXTargetDependency */,
+			);
+			name = Pink_CovenTests;
+			productName = Pink_CovenTests;
+			productReference = EA673F0727812722007820A3 /* Pink_CovenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA673F1127812722007820A3 /* Pink_CovenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA673F2127812722007820A3 /* Build configuration list for PBXNativeTarget "Pink_CovenUITests" */;
+			buildPhases = (
+				EA673F0E27812722007820A3 /* Sources */,
+				EA673F0F27812722007820A3 /* Frameworks */,
+				EA673F1027812722007820A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA673F1427812722007820A3 /* PBXTargetDependency */,
+			);
+			name = Pink_CovenUITests;
+			productName = Pink_CovenUITests;
+			productReference = EA673F1227812722007820A3 /* Pink_CovenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA673EEE2781271F007820A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EA673EF52781271F007820A3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					EA673F0627812722007820A3 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = EA673EF52781271F007820A3;
+					};
+					EA673F1127812722007820A3 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = EA673EF52781271F007820A3;
+					};
+				};
+			};
+			buildConfigurationList = EA673EF12781271F007820A3 /* Build configuration list for PBXProject "Pink_Coven" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA673EED2781271F007820A3;
+			packageReferences = (
+				EA673F2427812789007820A3 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
+			productRefGroup = EA673EF72781271F007820A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA673EF52781271F007820A3 /* Pink_Coven */,
+				EA673F0627812722007820A3 /* Pink_CovenTests */,
+				EA673F1127812722007820A3 /* Pink_CovenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA673EF42781271F007820A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA673F0127812722007820A3 /* Preview Assets.xcassets in Resources */,
+				EA673F5A27813750007820A3 /* TakePhotoStoryboard.storyboard in Resources */,
+				EA673EFE27812722007820A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA673F0527812722007820A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA673F1027812722007820A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA673EF22781271F007820A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA673F2D27812AFA007820A3 /* UserData.swift in Sources */,
+				EA673F4527812DD3007820A3 /* FeedCell.swift in Sources */,
+				EA673F3D27812C4F007820A3 /* Feed.swift in Sources */,
+				EA673F4127812CBC007820A3 /* UserRequest.swift in Sources */,
+				EA98E802278177A00016D3AE /* ImageRequest.swift in Sources */,
+				EA673EFC2781271F007820A3 /* MainView.swift in Sources */,
+				EA673F4327812DB5007820A3 /* FeedView.swift in Sources */,
+				EA673F3B27812C39007820A3 /* UserAuthentication.swift in Sources */,
+				EA673F3727812BBC007820A3 /* APIEnvironment.swift in Sources */,
+				EA673F3327812B79007820A3 /* APIRequest.swift in Sources */,
+				EA673F4927812E6A007820A3 /* LoginSignupView.swift in Sources */,
+				EA98E7FE278176560016D3AE /* AddDescriptionView.swift in Sources */,
+				EA673F3527812B97007820A3 /* APIClient.swift in Sources */,
+				EA673F3F27812C9A007820A3 /* PostRequest.swift in Sources */,
+				EA673F4B27812EA4007820A3 /* AppTitle.swift in Sources */,
+				EA98E7FC27816EAB0016D3AE /* PhotoCaptureController.swift in Sources */,
+				EA98E800278176B40016D3AE /* PostController.swift in Sources */,
+				EA98E7FA27816DE20016D3AE /* CameraPreviewView.swift in Sources */,
+				EA673F5827813732007820A3 /* TakePhotoViewController.swift in Sources */,
+				EA673F5C27815D2B007820A3 /* CreatePostView.swift in Sources */,
+				EA673F3927812BF4007820A3 /* Post.swift in Sources */,
+				EA673EFA2781271F007820A3 /* Pink_CovenApp.swift in Sources */,
+				EA673F4727812DFA007820A3 /* CommentCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA673F0327812722007820A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA673F55278133F8007820A3 /* ApiClientTests.swift in Sources */,
+				EA673F4F278130B0007820A3 /* PostRequestTests.swift in Sources */,
+				EA673F5127813387007820A3 /* JsonData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA673F0E27812722007820A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA673F1727812722007820A3 /* Pink_CovenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA673F0927812722007820A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA673EF52781271F007820A3 /* Pink_Coven */;
+			targetProxy = EA673F0827812722007820A3 /* PBXContainerItemProxy */;
+		};
+		EA673F1427812722007820A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA673EF52781271F007820A3 /* Pink_Coven */;
+			targetProxy = EA673F1327812722007820A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA673F1927812722007820A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA673F1A27812722007820A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA673F1C27812722007820A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pink_Coven/Supporting Files/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Pink_Coven/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Cognizant.Pink-Coven";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA673F1D27812722007820A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pink_Coven/Supporting Files/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Pink_Coven/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Cognizant.Pink-Coven";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA673F1F27812722007820A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pink_CovenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Cognizant.Pink-CovenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pink_Coven.app/Pink_Coven";
+			};
+			name = Debug;
+		};
+		EA673F2027812722007820A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pink_CovenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Cognizant.Pink-CovenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pink_Coven.app/Pink_Coven";
+			};
+			name = Release;
+		};
+		EA673F2227812722007820A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pink_CovenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Cognizant.Pink-CovenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pink_Coven;
+			};
+			name = Debug;
+		};
+		EA673F2327812722007820A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pink_CovenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Cognizant.Pink-CovenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pink_Coven;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA673EF12781271F007820A3 /* Build configuration list for PBXProject "Pink_Coven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA673F1927812722007820A3 /* Debug */,
+				EA673F1A27812722007820A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA673F1B27812722007820A3 /* Build configuration list for PBXNativeTarget "Pink_Coven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA673F1C27812722007820A3 /* Debug */,
+				EA673F1D27812722007820A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA673F1E27812722007820A3 /* Build configuration list for PBXNativeTarget "Pink_CovenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA673F1F27812722007820A3 /* Debug */,
+				EA673F2027812722007820A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA673F2127812722007820A3 /* Build configuration list for PBXNativeTarget "Pink_CovenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA673F2227812722007820A3 /* Debug */,
+				EA673F2327812722007820A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA673F2427812789007820A3 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA673F2527812789007820A3 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA673F2427812789007820A3 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EA673EEE2781271F007820A3 /* Project object */;
+}

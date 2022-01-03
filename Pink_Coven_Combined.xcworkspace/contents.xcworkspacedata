@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:Pink_Coven/Pink_Coven.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pink_CovenAPI/Pink_CovenAPI.xcodeproj">
+   </FileRef>
+</Workspace>

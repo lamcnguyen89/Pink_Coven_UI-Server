@@ -1,0 +1,3 @@
+.build/							usr/src/Pink_CovenAPI
+terraform/scripts/install.sh	usr/src/Pink_CovenAPI
+terraform/scripts/start.sh		usr/src/Pink_CovenAPI

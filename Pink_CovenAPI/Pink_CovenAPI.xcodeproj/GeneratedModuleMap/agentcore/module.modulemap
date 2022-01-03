@@ -1,0 +1,4 @@
+module agentcore {
+    umbrella "/Users/midnight-machine/Documents/XCode Projects/Pink_Coven Overall Project/Pink_CovenAPI/.build/checkouts/omr-agentcore/src/agentcore/include"
+    export *
+}
