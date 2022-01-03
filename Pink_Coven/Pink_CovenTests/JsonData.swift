@@ -33,5 +33,22 @@ enum JsonData {
             "bad json"
         ]
         """
+    
+    static let goodSignUp = """
+      {
+        "username": "username",
+        "email": "email@example.com"
+      }
+      """
+    
+    static let postUploaded = """
+        {
+          "id": "7D1EA5FA-3BB0-4CE4-AADB-DCCA549D3F51",
+          "createdAt": "2020-09-03T12:00:00Z",
+          "caption": "Dummy description",
+          "createdByUser": "Jerry"
+        }
+
+    """
 }
 

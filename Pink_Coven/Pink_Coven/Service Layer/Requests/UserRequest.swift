@@ -25,6 +25,7 @@ struct SignInUserRequest: APIRequest {
   var method: HTTPMethod { return .GET }
   var path: String { return "/user" }
   var contentType: String {return "application/json"}
+  var additionalHeaders: [String : String] {return [:]}
   var body: Data? { return nil }
     var params: UserParams? {
         return UserParams(id: user.id, password: user.password ?? "")
@@ -48,6 +49,7 @@ struct SignUpUserRequest: APIRequest {
   var method: HTTPMethod { return .POST }
   var path: String { return "/user" }
   var contentType: String {return "application/json"}
+  var additionalHeaders: [String : String] {return [:]}
   var body: Data? {
     return try? JSONEncoder().encode(user)
   }

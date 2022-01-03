@@ -23,6 +23,7 @@ protocol APIRequest {
   var method: HTTPMethod { get }
   var path: String { get }
   var contentType: String { get }
+  var additionalHeaders: [String: String] { get }
   var body: Data? { get }
   var params: QueryParamsType? { get }
 

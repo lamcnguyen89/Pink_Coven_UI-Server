@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Combine
 
 struct FeedCell: View {
     var post: Post
     let placeholderImage = UIImage(systemName: "photo")!
     @State var postImage: UIImage? = nil
+    @State private var subscriptions:
+    Set<AnyCancellable> = []
     
     var body: some View {
         VStack {
@@ -33,6 +36,19 @@ struct FeedCell: View {
                     .padding()
                     .shadow(radius: 3)
                 }(), alignment: .bottomTrailing)
+                .onAppear {
+                    guard let imageId = self.post.id else {
+                        return
+                    }
+                    let client = APIClient()
+                    let request = DownloadImageRequest(imageId: imageId)
+                    client.publisherForRequest(request)
+                        .replaceError(with: placeholderImage)
+                        .sink { image in
+                            postImage = image
+                        }
+                        .store(in: &subscriptions)
+                }
             CommentCell(post: post)
             }
         .buttonStyle(PlainButtonStyle())

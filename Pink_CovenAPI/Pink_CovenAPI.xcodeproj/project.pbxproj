@@ -34,6 +34,7 @@
 /* Begin PBXBuildFile section */
 		CE4B1F522783795100D34BCE /* UserRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1F512783795000D34BCE /* UserRoutes.swift */; };
 		CE4B1F5827837F8C00D34BCE /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = CE4B1F5727837F8C00D34BCE /* KituraContracts */; };
+		CE4B1F5A27839F6A00D34BCE /* ImageRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1F5927839F6A00D34BCE /* ImageRoutes.swift */; };
 		CE4CA3F72782A66B001A060B /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CA3F52782A66B001A060B /* UserAuthentication.swift */; };
 		CE4CA3F82782A66B001A060B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CA3F62782A66B001A060B /* Post.swift */; };
 		CE4CA3FA2782A691001A060B /* PostRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CA3F92782A691001A060B /* PostRoutes.swift */; };
@@ -2488,6 +2489,7 @@
 
 /* Begin PBXFileReference section */
 		CE4B1F512783795000D34BCE /* UserRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoutes.swift; sourceTree = "<group>"; };
+		CE4B1F5927839F6A00D34BCE /* ImageRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRoutes.swift; sourceTree = "<group>"; };
 		CE4CA3F52782A66B001A060B /* UserAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAuthentication.swift; path = "../../../../Pink_Coven/Pink_Coven/Service Layer/Models/UserAuthentication.swift"; sourceTree = "<group>"; };
 		CE4CA3F62782A66B001A060B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = "../../../../Pink_Coven/Pink_Coven/Service Layer/Models/Post.swift"; sourceTree = "<group>"; };
 		CE4CA3F92782A691001A060B /* PostRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRoutes.swift; sourceTree = "<group>"; };
@@ -3369,6 +3371,7 @@
 				OBJ_14 /* HealthRoutes.swift */,
 				CE4CA3F92782A691001A060B /* PostRoutes.swift */,
 				CE4B1F512783795000D34BCE /* UserRoutes.swift */,
+				CE4B1F5927839F6A00D34BCE /* ImageRoutes.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -5731,6 +5734,7 @@
 				OBJ_379 /* InitializationError.swift in Sources */,
 				CE4CA3FA2782A691001A060B /* PostRoutes.swift in Sources */,
 				CE4B1F522783795100D34BCE /* UserRoutes.swift in Sources */,
+				CE4B1F5A27839F6A00D34BCE /* ImageRoutes.swift in Sources */,
 				OBJ_380 /* Logging.swift in Sources */,
 				OBJ_381 /* Metrics.swift in Sources */,
 				CE4CA3F82782A66B001A060B /* Post.swift in Sources */,

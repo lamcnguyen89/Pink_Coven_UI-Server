@@ -15,6 +15,7 @@ struct GetAllPostRequest: APIRequest {
     var method: HTTPMethod { return .GET }
     var path: String {return "/posts"}
     var contentType: String { return "application/json" }
+    var additionalHeaders: [String : String] {return [:]}
     var body: Data? { return nil }
     var params: EmptyParams? { return nil}
     
@@ -38,6 +39,7 @@ struct CreateNewPostRequest: APIRequest, Codable {
     var method: HTTPMethod { return .POST }
     var path: String { return "/posts" }
     var contentType: String { return "application/json" }
+    var additionalHeaders: [String : String] {return [:]}
     var body: Data? {
       let encoder = JSONEncoder()
       encoder.dateEncodingStrategy = .iso8601

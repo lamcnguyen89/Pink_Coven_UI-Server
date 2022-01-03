@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE4B1F50278369CD00D34BCE /* TestJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1F4F278369CD00D34BCE /* TestJsonData.swift */; };
 		CE4B1F5527837F6700D34BCE /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = CE4B1F5427837F6700D34BCE /* KituraContracts */; };
+		CE4B1F5B2783B9C400D34BCE /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F5027813387007820A3 /* JsonData.swift */; };
+		CE4B1F5C2783B9C600D34BCE /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673F5027813387007820A3 /* JsonData.swift */; };
 		EA673EFA2781271F007820A3 /* Pink_CovenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673EF92781271F007820A3 /* Pink_CovenApp.swift */; };
 		EA673EFC2781271F007820A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673EFB2781271F007820A3 /* MainView.swift */; };
 		EA673EFE27812722007820A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA673EFD27812722007820A3 /* Assets.xcassets */; };
@@ -60,7 +61,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE4B1F4F278369CD00D34BCE /* TestJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestJsonData.swift; sourceTree = "<group>"; };
 		EA673EF62781271F007820A3 /* Pink_Coven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pink_Coven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA673EF92781271F007820A3 /* Pink_CovenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pink_CovenApp.swift; sourceTree = "<group>"; };
 		EA673EFB2781271F007820A3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -191,7 +191,6 @@
 				EA673F0227812722007820A3 /* Info.plist */,
 				EA673EFD27812722007820A3 /* Assets.xcassets */,
 				EA673EFF27812722007820A3 /* Preview Content */,
-				CE4B1F4F278369CD00D34BCE /* TestJsonData.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -428,9 +427,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA673F2D27812AFA007820A3 /* UserData.swift in Sources */,
-				CE4B1F50278369CD00D34BCE /* TestJsonData.swift in Sources */,
 				EA673F4527812DD3007820A3 /* FeedCell.swift in Sources */,
 				EA673F3D27812C4F007820A3 /* Feed.swift in Sources */,
+				CE4B1F5B2783B9C400D34BCE /* JsonData.swift in Sources */,
 				EA673F4127812CBC007820A3 /* UserRequest.swift in Sources */,
 				EA98E802278177A00016D3AE /* ImageRequest.swift in Sources */,
 				EA673EFC2781271F007820A3 /* MainView.swift in Sources */,
@@ -469,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA673F1727812722007820A3 /* Pink_CovenUITests.swift in Sources */,
+				CE4B1F5C2783B9C600D34BCE /* JsonData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
