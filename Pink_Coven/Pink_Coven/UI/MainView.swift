@@ -53,6 +53,9 @@ struct MainView: View {
         .onReceive(signOutPublisher) { _ in
           showingLogin = true
         }
+        .onReceive(userData.$selectedTab) { _ in
+            self.showingPostView = (userData.selectedTab == 1)
+        }
     }
 }
 

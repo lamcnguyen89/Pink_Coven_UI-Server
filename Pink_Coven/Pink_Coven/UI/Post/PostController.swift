@@ -11,11 +11,13 @@ import Combine
 final class PostController: ObservableObject {
   @Published var isRunning = false
   @Published var postUploaded = false
+  @Published var postError = false
+  var postErrorText = ""
   private var subscriptions: Set<AnyCancellable> = []
 
   func uploadPost(withDescription description: String, image: UIImage) {
     isRunning = true
-    let client = APIClient()
+      let client = APIClient(environment: .local81)
     let request = CreateNewPostRequest(caption: description)
     client.publisherForRequest(request)
       .tryMap { post -> (UUID, Data) in
@@ -30,7 +32,17 @@ final class PostController: ObservableObject {
       }
       .sink(receiveCompletion: { completion in
         self.isRunning = false
-        self.postUploaded = true
+          switch completion {
+          case .finished:
+              self.postErrorText = ""
+              self.postError = false
+              self.postUploaded = true
+          case .failure(let error):
+              self.postUploaded = false
+              self.postErrorText = error.localizedDescription
+              self.postError = true
+              
+          }
       }, receiveValue: { value in
       })
       .store(in: &subscriptions)
