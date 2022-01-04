@@ -8,7 +8,7 @@
 import Foundation
 import Kitura
 
-var users: [UserAuthentication] = []
+
 
 func initializeUserRoutes(app: App) {
     app.router.get("/api/v1/user", handler: getUser)
@@ -18,15 +18,20 @@ func initializeUserRoutes(app: App) {
 
 func addUser(user: UserAuthentication, completion: @escaping (UserAuthentication?, RequestError?) -> Void) {
     users.append(user)
-    completion(user, nil)
+    // We're passing the user back to the response, but we'll clear out the passed in password first
+    var user = savedUser
+    user?.password = ""
+    completion(user, error)
 }
 
 func getUser(query: UserParams, completion: @escaping (UserAuthentication?, RequestError?) -> Void) {
-    guard let foundUser = users.first(where: { $0.id == query.id }), foundUser.password == query.password else {
-        completion(nil, RequestError.unauthorized)
-        return
+    UserAuthentication.findAll(matching: query) { users, error in
+        guard let user = users?.first else {
+            completion(nil, error ?? .unauthorized)
+            return
+        }
+        completion(user, nil)
     }
-    completion(foundUser, nil)
 }
 
 
